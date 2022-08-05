@@ -6,3 +6,20 @@
   display: flex;
   justify-content: center;
 }
+
+.navbar {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+}
+
+.link {
+  color: grey;
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(0, 140, 255)
+}

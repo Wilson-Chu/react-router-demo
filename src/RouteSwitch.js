@@ -4,6 +4,7 @@ import Profile from "./Profile";
 import Contact from "./Contact";
 import Error from "./Error";
 import SharedLayout from "./SharedLayout";
+import Alert from "react-bootstrap/Alert";
 
 const RouteSwitch = () => {
   return (
