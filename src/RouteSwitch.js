@@ -3,15 +3,18 @@ import App from "./App";
 import Profile from "./Profile";
 import Contact from "./Contact";
 import Error from "./Error";
+import SharedLayout from "./SharedLayout";
 
 const RouteSwitch = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<App />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
