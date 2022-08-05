@@ -11,7 +11,9 @@ const RouteSwitch = () => {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<App />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile />}>
+            <Route path="/profile/account information" />
+          </Route>
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Route>
